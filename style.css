@@ -1,362 +1,218 @@
-/* Общие стили */
-	*{
-		margin: 0;
-		padding: 0;
-		font-family: 'Roboto', sans-serif;
-	}
-	article, figure, footer, header, section {display: block;}
-/* Отвечает за вывод и визуальное отображение элементов на странице */
-	nav
-	{
-		display: block;
-		margin-bottom: 0px;
-	}
-	ul 
-	{
-		list-style: none;
-	}
-	a 
-	{
-		text-decoration: none;
-	}
-	/* Шапка */
-	h1 
-	{
-		text-align: center;
-		padding-bottom: 10px;
-		padding-top: 15px; 
-	}	
-	h2 
-	{
-		margin-top: 20px;
-		margin-bottom: 0px; 
-		padding-bottom: 5px;
-		text-align: center;
-	}
-	header 
-	{
-		width: 100%;
-		margin-bottom: 30px;
-		/*position: relative;*/
-		height: 370px;
-		text-align:center;
-		margin: 0 auto;
-	}
-	/* Меню*/
-	.logo 
-	{	
-		padding-right: 100%;
-		display: block;
-		/*width: 12%; 200*/
-		/*height: 10%86*/
-		/*float: left;
-		padding: 20px;*/
-		position: absolute;
-	}
-	.menu li 
-	{
-		display: inline;
-	}
-	.menu a 
-	{
-		text-align:center;
-		text-transform: uppercase;
-		display: block;
-		color: darkcyan;
-		padding: 25px;
-	}
-	.menu a:hover 
-	{
-		color: #fff;
-		background-color: darkcyan;
-	}
-	/* Основное содержимое */
-	.container
-	{
-		margin: 0 auto;
-		width: 100%;
-		max-width: 960px;
-	} 
-
-	/* Футер */
-	footer 
-	{
-		margin-top: 70px;
-		height: 70px;
-		line-height: 70px;
-	}
-	.col-three 
-	{
-		background-color: darkcyan;
-		width: 33.3333333333%;
-		float: left;
-		text-align: center;
-	}
-	.fig 
-	{
-    	float: left; /* Обтекание картинки по правому краю */
-    	padding-left: 10px; /* Отступ слева */
-    	padding-bottom: 10px; /* Отступ снизу */
-		padding: 5px;
-	}
-	.title1
-	{
-		margin-top: 10px;
-	}
-	.Ethereum
-	{
-		margin-top: 90px;
-	}
-
-@media (max-width: 480px) 
+/*Общие стили*/
+*
 {
-	/* Ширину класса container делаем резиновой */
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+	/*color: #498991;*/
+}
+.backgroung
+{
+	background-color: black;
+	width: 100%;
+	max-width: 960px;
+}
+body
+{
+	/*background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQ0lEQVQoU2NkgIL/r0X+M4q+YYTRMHEYzQhigCTRJUB8kEYUhTDF6CYimw7Xgc1qggrh1tHeaop9jRxkcF9jC0dkMQAlElALKmN0TQAAAABJRU5ErkJggg==) repeat;
+	background-size: 4em;
+*/
+}
+
+article, figure, footer, header, section, nav
+{
+	display: block;
+}
+/* Шапка */
+ul
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+h1
+{
+	text-align: center;
+	padding-bottom: 15px;
+	padding-top: 5px;
+}
+header
+{
+	width: 100%;
+	text-align:center;
+}
+.logo img
+{
+	text-align: center;
+	/*width: 15%;
+	height: 33%;*/
+	width: 14em;
+	height: 6em;
+}
+/* Меню*/
+.menu li
+{
+	display: block;
+}
+.menu a
+{
+	display: block;
+	text-transform: uppercase;
+	color: darkcyan;
+	padding: 25px;
+}
+.menu a:hover
+{
+	color: #fff;
+	background-color: darkcyan;
+}
+/* Основное содержимое */
+h2
+{
+	text-align: center;
+	/*padding-top: 0.7em;*/
+	padding-bottom: 0.3em;
+}
+article
+{
+	margin-top: 0.4em;
+	height: 480px;
+}
+.container
+{
+	margin: 0 auto;
+	width: 100%;
+	max-width: 960px;
+}
+.container img
+{
+	width: 40em;
+	height: 26em;
+}
+.fig
+{
+    float: left;
+	padding: 10px;
+	padding-top: 0px;
+}
+.figcaption
+{
+	text-align: center;
+}
+
+/* Футер */
+footer
+{
+	
+	/*background-color: darkcyan;*/
+	margin-top: 20px;
+	/*height: 70px;*/
+	line-height: 100px;
+}
+.col-three
+{
+	background-color: darkcyan;
+	width: 33.3333333333%;
+	float: left;
+	text-align: center;
+}
+footer a:link, span
+{
+	color: #fff;
+}
+
+@media screen and (max-width: 1024px)
+{
+	.menu a:hover
+	{
+		color: darkcyan;
+		background: none;
+	}
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px)
+{
 	.container 
 	{
-		max-width: 90%;
-		margin-bottom: 20px;
+		max-width: 95%;
+		/*margin-bottom: 70px;*/
 	}
-	/* Расположение блоков в footer делаем в одну колонку */
-	.col-three 
+	article
 	{
-		float: none;
-		width: 100%;
-		text-align: center;
+		height: 40%;/*640px;*/
 	}
-	header 
-	{
-		height: 350px;
-	}
-	.fig img
-	{
-		text-align: center;
-		width: 100%;
-		height: 100%;
-	}
-	p
-	{
-		font-size: 30px;
-	}
-	.fig
-	{
-		text-align: center;
-	}
-	.logo
-	{
-		width: 7em;
-		height: 3em;
-		display: block;
-		float: left;
-		margin-top: 5px;
-		/*padding: 20px;*/
-		position: absolute;
-	}
-	.menu
-	{
-		text-align:center;
-		text-transform: uppercase;
-		display: block;
-		color: darkcyan;
-		/*padding: 25px;*/
-	}
-	h1
-	{
-		padding-bottom: 0px;
+	.fig {
+	    float: none; /* Обтекание картинки */
+	    text-align: center;
+	    padding: 10px;
 		padding-top: 0px;
-		margin-top: 0px;
-		margin-bottom: 0px;
 	}
-	h2
+	.container img
 	{
-		margin-top: 5px;
-	}
-	.title1
-	{
-		margin-top: 60px;
-	}
-	.Ethereum
-	{
-		margin-top: 10px;
-	}
-	footer
-	{
-		margin-top: 20px;
+		width: 40em;
+		height: 26em;
 	}
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px)
 {
-	/* Ширину класса container делаем резиновой */
 	.container 
 	{
-		max-width: 90%;
-		margin-bottom: 20px;
+		max-width: 95%;
+		/*margin-bottom: 70px;*/
 	}
-	/* Расположение блоков в footer делаем в одну колонку */
+	/*body
+	{
+		padding-left: 10px;
+		padding-right: 10px;
+	}*/
+	p, a, .copyr, .figcaption
+	{
+		font-size: 1.5rem;
+	}
+	article
+	{
+		height: 50%;
+	}
+	.container img
+	{
+		width: 100%;
+		height: 80%;
+	}
 	.col-three 
 	{
 		float: none;
 		width: 100%;
 		text-align: center;
 	}
-	header 
-	{
-		height: 380px;
-	}
-	.fig img
-	{
-		text-align: center;
-		width: 100%;
-		height: 100%;
-	}
-	.fig 
-	{
-    	/*float: left; /* Обтекание картинки по правому краю */
-    	padding-left: 10px; /* Отступ слева */
-    	padding-bottom: 10px; /* Отступ снизу */
-		padding: 5px;
-	}
-	.logo
-	{
-		width: 7em;
-		height: 3em;
-		/*display: block;*/
-		/*float: center;*/
-		margin-top: 5px;
-		text-align: center;
-		/*padding: 20px;*/
-		/*position: absolute;*/
-	}
-	.menu
-	{
-		text-align:center;
-		text-transform: uppercase;
-		display: block;
-		color: darkcyan;
-		/*padding: 25px;*/
-	}
-	h1
-	{
-		margin-top: 5px;
-		margin-bottom: 10px;
-	}
-	h2
-	{
-		/*margin-top: 5px;*/
-	}
-	.title1
-	{
-		margin-top: 10px;
-	}
-	.Ethereum
-	{
-		margin-top: 10px;
-	}
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px)
-{ 
-	*{
-		margin: 0;
-		padding: 0;
-		font-family: 'Roboto', sans-serif;
-	}
-	article, figure, footer, header, section {display: block;}
-/* Отвечает за вывод и визуальное отображение элементов на странице */
-	nav
+@media (max-width: 480px) 
+{
+	.container 
 	{
-		display: block;
-		margin-bottom: 0px;
-	}
-	ul 
-	{
-		list-style: none;
-	}
-	a 
-	{
-		text-decoration: none;
-	}
-	/* Шапка */
-	h1 
-	{
-		text-align: center;
-		padding-bottom: 10px;
-		padding-top: 15px; 
-	}	
-	h2 
-	{
-		margin-bottom: 0px; 
-		padding-bottom: 5px;
-		text-align: center;
-	}
-	header 
-	{
-		width: 100%;
-		margin-bottom: 30px;
-		/*position: relative;*/
-		height: 370px;
-		text-align:center;
-		margin: 0 auto;
-	}
-	/* Меню*/
-	.logo 
-	{	
-		padding-right: 100%;
-		display: block;
-		/*width: 12%; 200*/
-		/*height: 10%86*/
-		/*float: left;
-		padding: 20px;*/
-		position: absolute;
-	}
-	.menu li 
-	{
-		display: inline;
-	}
-	.menu a 
-	{
-		text-align:center;
-		text-transform: uppercase;
-		display: block;
-		color: darkcyan;
-		padding: 25px;
-	}
-	.menu a:hover 
-	{
-		color: #fff;
-		background-color: darkcyan;
-	}
-	/* Основное содержимое */
-	.container
-	{
-		margin: 0 auto;
-		width: 100%;
-		max-width: 960px;
-	} 
-
-	/* Футер */
-	footer 
-	{
-		margin-top: 30px;
-		height: 70px;
-		line-height: 70px;
+		max-width: 90%;
+		/*margin-bottom: 70px;*/
 	}
 	.col-three 
 	{
-		background-color: darkcyan;
-		width: 33.3333333333%;
-		float: left;
+		float: none;
+		width: 100%;
 		text-align: center;
 	}
-	.fig {
-	    float: none; /* Обтекание картинки */
-	    text-align: center;
-	    padding-left: 10px; /* Отступ слева */
-	    padding-bottom: 10px; /* Отступ снизу */
-		padding: 5px;
-	}
-	.Ethereum
+	article
 	{
-		margin-top: 20px;
+		height: 50%;
+	}
+	.container img
+	{
+		width: 100%;
+		height: 80%;
+	}
+	p, a, .copyr, .figcaption
+	{
+		font-size: 1.5rem;
 	}
 }
