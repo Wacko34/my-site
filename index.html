@@ -8,6 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+		<script defer src="script.js"></script>
 	</head>
 	<body>
 		<header>
@@ -28,11 +29,14 @@
 			</nav>
 		</header>
 		<section class="container" id="part1">
+			<div  style="margin-top: 5px" class="bookmark-list">
+				<span>Закладки:</span> 
+			</div>
 			<h2>Что такое криптовалюта?</h2>
 			<p>Криптовалюта — разновидность цифровой валюты, учёт внутренних расчётных единиц которой обеспечивает децентрализованная платёжная система, работающая в полностью автоматическом режиме. Сама по себе криптовалюта не имеет какой-либо особой материальной или электронной формы. При этом на криптографических методах основаны механизмы генерации адреса и проверки полномочий на операции с ним, а также формирование пакета транзакций и его взаимосвязь с другими пакетами. При этом в системе нет никакой информации о владельцах адресов или о факте создания адреса — то есть нет механизма убедиться, что адрес получателя действительно существует или что ключ доступа к нему не утерян. Отсутствие информации о владельце является основой анонимности участников транзакций. По своим экономическим условиям и последствиям платежи криптовалютой более похожи на платежи наличными деньгами, чем на варианты безналичных платежей.</p>
 		</section>
 		<section class="container">
-			<article id="part2">
+			<article id="article_1">
 				<h2>Биткоин</h2>
 				<div class="fig">
 					<img src="bitcoin.jpg" alt="Bitcoin">
@@ -40,8 +44,9 @@
 				</div>
 				<p>Биткоин (от англ. Bitcoin, от bit — бит и coin — монета), — пиринговая платёжная система, использующая одноимённую единицу для учёта операций. Для обеспечения функционирования и защиты системы используются криптографические методы, но при этом вся информация о транзакциях между адресами системы доступна в открытом виде. Электронный платёж между двумя сторонами происходит без посредников и необратим — нет механизма отмены подтверждённой операции. Средства никто не может заблокировать (арестовать), даже временно, за исключением владельца закрытого ключа (или лица, которому он стал известен).</p>
 				<p><i>Дата публикации 10.02.21, доктор криптовалютных наук Руслан Соколовский</i></p>
+				<a class="bookmark" href="#">Добавить в закладки</a>
 			</article>
-			<article id="part3">
+			<article id="article_2">
 				<h2>Эфириум</h2>
 				<div class="fig">
 					<img src="ethereum.jpg" alt="Ethereum">
@@ -49,9 +54,48 @@
 				</div>
 				<p>Ethereum (Эфириум, от англ. ether — «эфир») — криптовалюта и платформа для создания децентрализованных онлайн-сервисов на базе блокчейна (децентрализованных приложений), работающих на базе умных контрактов. Реализована как единая децентрализованная виртуальная машина. Концепт был предложен основателем журнала Bitcoin Magazine Виталиком Бутериным в конце 2013 года, сеть была запущена 30 июля 2015 года. Технология Ethereum даёт возможность регистрации любых сделок с любыми активами на основе распределённой базы контрактов типа блокчейн, не прибегая к традиционным юридическим процедурам</p>
 				<p><i>Дата публикации 10.02.21, доктор криптовалютных наук Руслан Соколовский</i></p>
+				<a class="bookmark" href="#">Добавить в закладки</a>
 			</article>
 		</section>
 		<footer>
+			<!--Начало модального окна-->
+				<button style="margin-left: 43%" id="myBtn">Обратная связь</button>
+				<div id="myModal" class="modal">
+					<div class="modal-content">
+						<div class="modal-header">
+							<span class="close">&times;</span>
+							<h2>Обратная связь</h2>
+						</div>
+						<div class="modal-body">
+
+							<form class="contact_form" action="" method="post" name="contact_form">
+								<ul>
+									<li>
+										<label for="name">Name:</label>
+										<input type="text" name="name" placeholder="John Doe" required/>
+									</li>
+									<li>
+										<label for="email">Email:</label>
+										<input type="text" name="email" placeholder="email format" required/>
+										<!--<span class="form_hint">Proper format email</span>-->
+									</li>
+									<li>
+										<label for="message">Message:</label>
+										<textarea name="message" cols="40" rows="6"></textarea>
+									</li>
+									<li>
+										<button class="submit" type="submit">Submit Form</button>
+									</li>
+								</ul>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<br>
+							<!--<h3>Футер модального окна</h3>-->
+						</div>
+					</div>
+				</div>
+			<!--Конец модального окна-->
 			<div class="container">
 				<div class="col-three">
 					<span class="copyr">
